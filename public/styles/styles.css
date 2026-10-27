@@ -54,8 +54,8 @@ select{
     height: 30px;
 }
 
-/*Only aligned the text if I encased it in another block, still 
-need to study a little on why this is the case, but this really messed me up*/
+/*Only aligned the button if I encased it in another block, still don't
+quite understand why, but it works for now*/
 .book { 
     text-align: center;
 }
