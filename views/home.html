@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Dream Vacation</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/booking.png">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href = "styles/styles.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/vacation.js" defer></script>
+</head>
+<body>
+    <form id="Book-Vacation" action="/submit-vacation" method="post">
+        <h1>Book Your Dream Vacation</h1>
+
+        <div class="mainbody">
+                <label for="destination"><strong>Destination</strong></label>
+                <select id="destination" name="destination">
+                    <option value="none">Choose a destination...</option>
+                    <option value="Tokyo">Tokyo, Japan</option>
+                    <option value="Seattle">Seattle, WA</option>
+                    <option value="NYC">New York City, USA</option>
+                    <option value="France">Paris, France</option>
+                    <option value="China">Chongqing, China</option>
+                </select>
+                <span class="err" id="err-destination">Destination selection is required</span>
+        </div>
+
+        <div class = "fields">
+            <div class="field">
+                <label for="date"><strong>Departure Date</strong></label>
+                <input type="date" id="date" name="date">
+                <span class="err" id="err-date">Departure Date is required</span>
+            </div>
+            
+            <div class="field">
+                <label for="num"><strong>Number of Travelers</strong></label>
+                <input type="text" id="num" name="num">
+                <span class="err" id="err-num">Amount of travelers must be a number greater than 0.</span>
+            </div>
+        </div>
+
+        <!-- Find my vacation button -->
+        <div class="book">
+            <button type="submit">Book Appointment</button>
+        </div>
+
+        <footer>
+            <p>Github Repository: </p>
+        </footer>
+    </form>
+</body>
+</html>
